@@ -20,7 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Train a Random Forest Classifier
 params = {'n_estimators': 100,
-            'max_depth': 15}
+            'max_depth': 5}
 
 model = RandomForestClassifier(**params)
 model.fit(X_train, y_train)
